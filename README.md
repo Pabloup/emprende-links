@@ -1,59 +1,28 @@
-# EmprendeLinks
+# EmprendeLinks 
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.0.
+Una aplicación web *mobile-first* diseñada especialmente para emprendedores. Permite centralizar canales de contacto y catálogos  en una interfaz rápida, intuitiva y optimizada para dispositivos móviles (estilo Linktree/Instagram).
 
-## Development server
+Este proyecto forma parte de mi portfolio personal para demostrar el desarrollo de aplicaciones modernas utilizando el ecosistema de Angular.
 
-To start a local development server, run:
+## Tecnologías Utilizadas
 
+* **Angular** (Framework Frontend)
+* **TypeScript** (Lógica y tipado estructurado)
+* **CSS3** (Diseño personalizado y adaptabilidad mobile-first)
+* **Font Awesome** (Iconografía interactiva)
+
+## Características del Proyecto
+
+* **Diseño UI/UX de alta conversión:** Botones grandes y accesibles pensados para el uso con el pulgar en celulares.
+* **Sección de Perfil:** Estética limpia inspirada en redes sociales para mantener la identidad de marca del emprendimiento.
+* **Botonera de Acción Rápida:** Accesos directos a WhatsApp, Catálogo en línea, Ubicación geográfica y pasarelas de pago (Mercado Pago).
+
+---
+
+## 🚀 Instalación y Desarrollo Local
+
+Si querés clonar este proyecto y correrlo en tu computadora, seguí estos pasos:
+
+### 1. Clonar el repositorio
 ```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+git clone [https://github.com/Pabloup/emprende-links.git](https://github.com/Pabloup/emprende-links.git)
