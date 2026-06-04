@@ -1,1 +1,120 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #1c1e21;
+  display: flex;
+  justify-content: center;
+}
+
+/* Contenedor que simula la pantalla de un celular */
+.container {
+  width: 100%;
+  max-width: 480px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  padding: 40px 20px 20px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos del Perfil (Estilo Instagram) */
+.profile-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar i {
+  font-size: 35px;
+  color: white;
+}
+
+.store-name {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.store-bio {
+  font-size: 14px;
+  color: #65676b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Sección de Botones */
+.links-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-grow: 1;
+}
+
+/* Estilo general de los botones interactivos */
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.btn i {
+  font-size: 20px;
+  margin-right: 15px;
+  width: 25px;
+  text-align: center;
+}
+
+/* Efecto al tocar/hacer clic */
+.btn:hover, .btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Colores personalizados para cada acción */
+.btn-whatsapp {
+  background-color: #25D366;
+  color: white;
+}
+
+.btn-catalog {
+  background-color: #3574e2;
+  color: white;
+}
+
+.btn-location {
+  background-color: #f35555;
+  color: white;
+}
+
+.btn-mercadopago {
+  background-color: #00b1ea;
+  color: white;
+}
+
+/* Footer */
+.main-footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 12px;
+  color: #8a8d91;
+}
