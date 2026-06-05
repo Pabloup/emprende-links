@@ -19,6 +19,24 @@
 
   </section>
 
+  <!-- NUEVA SECCIÓN: FEED DE PRODUCTOS -->
+  <section class="products-feed">
+    <h2 class="feed-title"><i class="fa-solid fa-border-all"></i> Productos Destacados</h2>
+    
+    <div class="products-grid">
+      @for (product of products; track product.title) {
+        <div class="product-card">
+          <img [src]="product.imageUrl" [alt]="product.title" class="product-img">
+          <div class="product-overlay">
+            <span class="product-price">{{ product.price }}</span>
+          </div>
+        </div>
+      }
+    </div>
+  </section>
+
+  <!-- FOOTER COMPACTO -->
+
   <footer class="main-footer">
     <p>Creado con ❤️ para potenciar emprendedores</p>
   </footer>

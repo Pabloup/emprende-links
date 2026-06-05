@@ -40,4 +40,13 @@ export class App {
       class: 'btn-mercadopago'
     }
   ];
+  // Lista dinámica para el Feed de Productos (Estilo Instagram) con fotos ramdom para muestra
+  products = [
+    { title: 'Producto 1', imageUrl: 'https://picsum.photos/500/500?random=1', price: '$4.500' },
+    { title: 'Producto 2', imageUrl: 'https://picsum.photos/500/500?random=2', price: '$6.200' },
+    { title: 'Producto 3', imageUrl: 'https://picsum.photos/500/500?random=3', price: '$3.800' },
+    { title: 'Producto 4', imageUrl: 'https://picsum.photos/500/500?random=4', price: '$7.500' },
+    { title: 'Producto 5', imageUrl: 'https://picsum.photos/500/500?random=5', price: '$5.000' },
+    { title: 'Producto 6', imageUrl: 'https://picsum.photos/500/500?random=6', price: '$8.900' }
+  ];
 }
