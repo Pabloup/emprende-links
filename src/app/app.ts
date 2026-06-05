@@ -6,9 +6,9 @@ import { CommonModule } from '@angular/common'; // para poder usar bucles en el 
   standalone: true,
   imports: [CommonModule],
   templateUrl: './app.html',
-  styleUrl: './styles.css'
+  styleUrl: '../styles.css'
 })
-export class AppComponent {
+export class App {
   // Datos del perfil
   storeName = '@TuEmprendimiento';
   storeBio = '✨ Diseños exclusivos | Showroom en Tandil 📍\nEnvíos a todo el país 🚀';

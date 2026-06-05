@@ -1,37 +1,21 @@
 <div class="container">
   
-  <!-- Perfil -->
   <header class="profile-header">
     <div class="avatar">
-      <!-- cambiar por una foto -->
       <i class="fa-solid fa-shop"></i>
     </div>
-    <h1 class="store-name">&#64;TuEmprendimiento</h1>
-    <p class="store-bio">✨ Diseños exclusivos | Showroom en Tandil 📍<br>Envíos a todo el país 🚀</p>
+    <h1 class="store-name">{{ storeName }}</h1>
+    <p class="store-bio">{{ storeBio }}</p>
   </header>
 
-  <!-- BOTONES -->
   <section class="links-section">
     
-    <a href="https://wa.me/tu-numero" target="_blank" class="btn btn-whatsapp">
-      <i class="fa-brands fa-whatsapp"></i>
-      <span>Pedi por WhatsApp (Atención Inmediata)</span>
-    </a>
-
-    <a href="#" target="_blank" class="btn btn-catalog">
-      <i class="fa-solid fa-book-open"></i>
-      <span>Ver Catálogo</span>
-    </a>
-
-    <a href="#" target="_blank" class="btn btn-location">
-      <i class="fa-solid fa-location-dot"></i>
-      <span>Cómo llegar al Showroom</span>
-    </a>
-
-    <a href="#" target="_blank" class="btn btn-mercadopago">
-      <i class="fa-solid fa-credit-card"></i>
-      <span>Link de Pago / Señas</span>
-    </a>
+    @for (link of links; track link.title) {
+      <a [href]="link.url" target="_blank" class="btn" [ngClass]="link.class">
+        <i [class]="link.icon"></i>
+        <span>{{ link.title }}</span>
+      </a>
+    }
 
   </section>
 
