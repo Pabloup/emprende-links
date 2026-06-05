@@ -118,3 +118,82 @@ body {
   font-size: 12px;
   color: #8a8d91;
 }
+
+/* --- SECCIÓN DEL FEED DE PRODUCTOS (ESTILO INSTAGRAM) --- */
+
+.products-feed {
+  margin-top: 35px;
+  border-top: 1px solid #efefef;
+  padding-top: 20px;
+}
+
+.feed-title {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #8e8e8e;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+/* La Grilla Mágica de 3 Columnas */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Divide el espacio en 3 columnas exactamente iguales */
+  gap: 4px; /* Separación mínima, típica de Instagram */
+}
+
+/* Tarjeta contenedora de cada foto */
+.product-card {
+  position: relative;
+  aspect-ratio: 1 / 1; /* Obliga a que el contenedor sea un cuadrado perfecto */
+  overflow: hidden;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+/* Control de la imagen dentro del cuadrado */
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Recorta la imagen para que llene el cuadrado sin deformarse */
+  transition: transform 0.3s ease;
+}
+
+/* Capa oscura interactiva que aparece al pasar el mouse/dedo (Overlay) */
+.product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo negro semitransparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Oculto por defecto */
+  transition: opacity 0.3s ease;
+}
+
+.product-price {
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+/* --- EFECTOS INTERACTIVOS (HOVER) --- */
+/* Cuando el usuario pasa el mouse por encima de la tarjeta... */
+.product-card:hover .product-img {
+  transform: scale(1.05); /* Hace un micro-zoom en la foto */
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1; /* Muestra el precio tapando suavemente la foto */
+}
